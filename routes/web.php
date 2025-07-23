@@ -1,11 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Livewire\DeputadosList;
+use App\Livewire\ShowDespesas;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\DeputadoController;
 
-Auth::routes();
+Route::get('/', DeputadosList::class);
+Route::get('/deputados/despesas/{id}', ShowDespesas::class)->name('deputados.despesas');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/teste', [DeputadoController::class, 'index']);
+
+
+
+
