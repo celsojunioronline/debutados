@@ -59,28 +59,39 @@
 
 > Requisitos: PHP 8.2+, Composer, Node.js, NPM/Yarn
 
-```bash
+
 # Clone o repositório
+```bash
 git clone https://github.com/seunome/deputados.git
 cd deputados
-
+```
 # Instale dependências
+```bash
 composer install
 npm install
-
+```
 # Compile os assets
+```bash
 npm run build
-
+```
 # Crie o banco de dados e configure o .env
+```bash
 cp .env.example .env
 php artisan key:generate
-
+```
 # Rode as migrations
+```bash
 php artisan migrate
+```
 
+# Inicie os Jobs para rodar em segundo plano
+```bash
+php artisan queue:work --daemon &> /dev/null &
+```
 # Inicie o servidor
+```bash
 php artisan serve
-
+```
 
 
 
