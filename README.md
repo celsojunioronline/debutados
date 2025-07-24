@@ -28,7 +28,7 @@
   <a href="#🧰-tecnologias">Tecnologias</a> •
   <a href="#🚀-como-usar">Como usar</a> •
   <a href="#🧠-sobre-o-projeto">Sobre o projeto</a> •
-  <a href="#📄-licença">Licença</a>
+  <a href="#📄-licença">Licença</a> •
   <a href="https://celsojunior.pessoal.ws">DEMO</a>
 </p>
 
